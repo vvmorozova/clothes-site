@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Male_Fashion Template">
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pretty otter - онлайн сешка</title>
-	<link rel="icon" type="image/x-icon" href="../riddles/img/logo.ico" >
+	<link rel="icon" type="image/x-icon" href="{% static "img/logo.ico"%}" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Google Font -->
@@ -15,14 +15,15 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="../riddles/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" />
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css "%}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css "%}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/elegant-icons.css "%}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css "%}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/nice-select.css "%}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css "%}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/slicknav.min.css "%}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css "%}" type="text/css">
 </head>
 
 <body>
@@ -41,9 +42,9 @@
             </div>
         </div>
         <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="#" class="search-switch"><img src=" {% static "img/icon/search.png"  %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/cart.png"  %}" alt=""> <span>0</span></a>
             <div class="price">0.00₽</div>
         </div>
         <div id="mobile-menu-wrap"></div>
@@ -75,33 +76,33 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="../riddles/img/logo.png" alt=""></a>
+                        <a href="./index"><img src="{% static "img/logo.png"  %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Главная</a></li>
-                            <li><a href="./shop.html">Каталог</a></li>
+                            <li><a href="./index">Главная</a></li>
+                            <li><a href="./shop">Каталог</a></li>
                             <!-- <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">About Us</a></li>
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="./about">About Us</a></li>
+                                    <li><a href="./shop-details">Shop Details</a></li>
+                                    <li><a href="./shopping-cart">Shopping Cart</a></li>
+                                    <li><a href="./checkout">Check Out</a></li>
+                                    <li><a href="./blog-details">Blog Details</a></li>
                                 </ul>
                             </li> -->
                             <li class="active"><a>Наши новости</a></li>
-                            <li><a href="./contact.html">Контакты</a></li>
+                            <li><a href="./contact">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+                        <a href="#" class="search-switch"><img src="{% static "img/icon/search.png"  %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/heart.png"  %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/cart.png"  %}" alt=""> <span>0</span></a>
                         <div class="price">0.00₽</div>
                     </div>
                 </div>
@@ -112,7 +113,7 @@
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-blog set-bg" data-setbg="img/breadcrumb-bg.jpg">
+    <section class="breadcrumb-blog set-bg" data-setbg="{% static "img/breadcrumb-bg.jpg" %}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -129,91 +130,91 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-1.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 16 октября</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png"  %}" alt=""> 16 октября</span>
                             <h5>Теперь у нас можно выпить кофе</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-2.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 21 октября</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png"  %}" alt=""> 21 октября</span>
                             <h5>Лучшие стрижки сезона</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-3.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 28 сентября</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png"  %}" alt=""> 28 сентября</span>
                             <h5>Как одеться в поход</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-4.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-4.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 16 сентября</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png"  %}" alt=""> 16 сентября</span>
                             <h5>Коллекция [БАЗА]</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-5.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-5.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 21 августа</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png" %}" alt=""> 21 августа</span>
                             <h5>Мастер-класс по вязанию</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-6.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-6.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 28 августа</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png" %}" alt=""> 28 августа</span>
                             <h5>Переезд. Новая локация.</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/seller.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/seller.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 20 ноября</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png" %}" alt=""> 20 ноября</span>
                             <h5>Хэппи бездей ту ас! Нам 4 года.</h5>
-                            <a href="./stats.html">Читать</a>
+                            <a href="./stats">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-8.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-8.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 21 августа</span>
+                            <span><img src=" {% static "../riddles/img/icon/calendar.png"  %}" alt=""> 21 августа</span>
                             <h5>Мастер-класс тай-дай</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-9.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="{% static "img/blog/blog-9.jpg" %}"></div>
                         <div class="blog__item__text">
-                            <span><img src="../riddles/img/icon/calendar.png" alt=""> 28 июня</span>
+                            <span><img src="{% static "../riddles/img/icon/calendar.png" %}" alt=""> 28 июня</span>
                             <h5>Переоткрытие</h5>
-                            <a href="./blog-details.html">Читать</a>
+                            <a href="./blog-details">Читать</a>
                         </div>
                     </div>
                 </div>
@@ -229,10 +230,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="../riddles/img/white-logo.png" alt=""></a>
+                            <a href="#"><img src="{% static "../riddles/img/white-logo.png" %}" alt=""></a>
                         </div>
                         <p>Все для покупателя.</p>
-                        <a href="#"><img src="../riddles/img/payment.png" alt=""></a>
+                        <a href="#"><img src="{% static "../riddles/img/payment.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -296,16 +297,16 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src=" {% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src=" {% static "js/bootstrap.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nice-select.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nicescroll.min.js" %}"></script>
+    <script src=" {% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src=" {% static "js/jquery.countdown.min.js" %}"></script>
+    <script src=" {% static "js/jquery.slicknav.js" %}"></script>
+    <script src=" {% static "js/mixitup.min.js" %}"></script>
+    <script src=" {% static "js/owl.carousel.min.js" %}"></script>
+    <script src=" {% static "js/main.js" %}"></script>
 </body>
 
 </html>

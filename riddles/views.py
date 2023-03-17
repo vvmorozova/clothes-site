@@ -38,6 +38,8 @@ def index(request):
     context = {'latest_question_list': latest_question_list}
     #return render(request, "index.html", {"latest_riddles": Riddle.objects.order_by('-pub_date')[:5]})
     return render(request, 'index.html', context)
+def blog(request):
+    return render(request, 'blog.html')
 # def index(request):
 #     latest_question_list = Question.objects.order_by('-pub_date')[:5]
 #     template = loader.get_template('index.html')
