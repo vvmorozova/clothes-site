@@ -38,22 +38,33 @@ def index(request):
     context = {'latest_question_list': latest_question_list}
     #return render(request, "index.html", {"latest_riddles": Riddle.objects.order_by('-pub_date')[:5]})
     return render(request, 'index.html', context)
+
 def blog(request):
     return render(request, 'blog.html')
-# def index(request):
-#     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-#     template = loader.get_template('index.html')
-#     context = {
-#         'latest_question_list': latest_question_list,
-#     }
-#     return HttpResponse(template.render(context, request))
-# def index(request):
-#     latest_question_list = Question.objects.order_by('-pub_date')[:5]
-#     output = ', '.join([q.question_text for q in latest_question_list])
-#     return HttpResponse(output)
-#def detail( request, riddle_id):
-#    return render(request, "answer.html", {"riddle": get_object_or_404(Riddle, pk=riddle_id)})
 
+def blog_details(request):
+    return render(request, 'blog-details.html')
+
+def shop(request):
+    return render(request, 'shop.html')
+
+def shop_details(request):
+    return render(request, 'shop-details.html')
+
+def shopping_cart(request):
+    return render(request, 'shopping-cart.html')
+
+def stats(request):
+    return render(request, 'stats.html')
+
+def results(request):
+    return render(request, 'results.html')
+
+def about(request):
+    return render(request, 'about.html')
+
+def contact(request):
+    return render(request, 'contact.html')
 
 def answer(request, riddle_id):
     riddle = get_object_or_404(Riddle, pk=riddle_id)

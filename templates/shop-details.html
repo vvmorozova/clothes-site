@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Male_Fashion Template">
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pretty otter - онлайн сешка</title>
-	<link rel="icon" type="image/x-icon" href="../riddles/img/logo.ico" >
+	<link rel="icon" type="image/x-icon" href="{% static "img/logo.ico"%}" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Male-Fashion | Template</title>
 
@@ -16,14 +16,15 @@
     rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="../riddles/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" />
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/elegant-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/nice-select.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/slicknav.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
 </head>
 
 <body>
@@ -43,9 +44,9 @@
             
         </div>
         <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="#" class="search-switch"><img src=" {% static "img/icon/search.png"  %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/cart.png"  %}" alt=""> <span>0</span></a>
             <div class="price">0.00₽</div>
         </div>
         <div id="mobile-menu-wrap"></div>
@@ -74,24 +75,24 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="../riddles/img/logo.png" alt=""></a>
+                        <a href="../"><img src="{% static "img/logo.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Главная</a></li>
-                            <li class="active"><a href="./shop.html">Каталог</a></li>
-                            <li><a href="./blog.html">Наши новости</a></li>
-                            <li><a href="./contact.html">Контакты</a></li>
+                            <li><a href="../">Главная</a></li>
+                            <li class="active"><a href="../shop">Каталог</a></li>
+                            <li><a href="../blog">Наши новости</a></li>
+                            <li><a href="../contact">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+                        <a href="#" class="search-switch"><img src="{% static "img/icon/search.png" %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/heart.png" %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/cart.png" %}" alt=""> <span>0</span></a>
                         <div class="price">0.00₽</div>
                     </div>
                 </div>
@@ -108,8 +109,8 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="product__details__breadcrumb">
-                            <a href="./index.html">Главная</a>
-                            <a href="./shop.html">Каталог</a>
+                            <a href="../">Главная</a>
+                            <a href="../shop">Каталог</a>
                             <span>О продукте</span>
                         </div>
                     </div>
@@ -119,25 +120,25 @@
                         <ul class="nav nav-tabs" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/thumb-1.png">
+                                    <div class="product__thumb__pic set-bg" data-setbg="{% static "img/shop-details/thumb-1.png" %}">
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/thumb-2.png">
+                                    <div class="product__thumb__pic set-bg" data-setbg="{% static "img/shop-details/thumb-2.png" %}">
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/thumb-3.png">
+                                    <div class="product__thumb__pic set-bg" data-setbg="{% static "img/shop-details/thumb-3.png" %}">
                                     </div>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#tabs-4" role="tab">
-                                    <div class="product__thumb__pic set-bg" data-setbg="img/shop-details/thumb-4.png">
+                                    <div class="product__thumb__pic set-bg" data-setbg="{% static "img/shop-details/thumb-4.png" %}">
                                         <i class="fa fa-play"></i>
                                     </div>
                                 </a>
@@ -148,22 +149,22 @@
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabs-1" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="../riddles/img/shop-details/product-big-2.png" alt="">
+                                    <img src="{% static "img/shop-details/product-big-2.png" %}" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-2" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="../riddles/img/shop-details/product-big-3.png" alt="">
+                                    <img src="{% static "img/shop-details/product-big-3.png" %}" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-3" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="../riddles/img/shop-details/product-big.png" alt="">
+                                    <img src="{% static "img/shop-details/product-big.png" %}" alt="">
                                 </div>
                             </div>
                             <div class="tab-pane" id="tabs-4" role="tabpanel">
                                 <div class="product__details__pic__item">
-                                    <img src="../riddles/img/shop-details/product-big-4.png" alt="">
+                                    <img src="{% static "img/shop-details/product-big-4.png" %}" alt="">
                                     <a href="https://www.youtube.com/watch?v=8PJ3_p7VqHw&list=RD8PJ3_p7VqHw&start_radio=1" class="video-popup"><i class="fa fa-play"></i></a>
                                 </div>
                             </div>
@@ -186,7 +187,7 @@
                                 <i class="fa fa-star-o"></i>
                                 <span> - 5 Отзывов</span>
                             </div>
-                            <h3>2700.00₽ <span>7000.00₽</span></h3>
+                            <h3>2700 ₽ <span>7000 ₽</span></h3>
                             <p>Теплая кофта, которая согреет холодным вечером.</p>
                             <div class="product__details__option">
                                 <div class="product__details__option__size">
@@ -289,7 +290,7 @@
                                 <div class="tab-pane" id="tabs-6" role="tabpanel">
                                     <div class="product__details__tab__content">
                                         <div class="product__details__tab__content__item">
-                                            <h5><img src="../riddles/img/clients/avatars/andrew.jpg" class="avatar"></img> Андрей</h5>
+                                            <h5><img src="img/clients/avatars/andrew.jpg" class="avatar"></img> Андрей</h5>
                                             <p><div class="rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -300,7 +301,7 @@
                                             <p>Села хорошо, материал очень приятный, не скатывается. Доставка до Москвы за две недели.</p>
                                         </div>
                                         <div class="product__details__tab__content__item">
-                                            <h5><img src="../riddles/img/clients/avatars/masha.jpg" class="avatar"></img> Мария</h5>
+                                            <h5><img src="img/clients/avatars/masha.jpg" class="avatar"></img> Мария</h5>
                                             <p><div class="rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -311,7 +312,7 @@
                                             <p>эээ фигня полная зря ждала полгода верните деньги</p>
                                         </div>
                                         <div class="product__details__tab__content__item">
-                                            <h5><img src="../riddles/img/clients/avatars/misha.jpg" class="avatar"></img> Михаил</h5>
+                                            <h5><img src="img/clients/avatars/misha.jpg" class="avatar"></img> Михаил</h5>
                                             <p><div class="rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -322,7 +323,7 @@
                                             <p>Нет принта хаги ваги</p>
                                         </div>
                                         <div class="product__details__tab__content__item">
-                                            <h5><img src="../riddles/img/clients/avatars/karina.jpg" class="avatar"></img> Карина</h5>
+                                            <h5><img src="img/clients/avatars/karina.jpg" class="avatar"></img> Карина</h5>
                                             <p><div class="rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -333,7 +334,7 @@
                                             <p>Памагите...</p>
                                         </div>
                                         <div class="product__details__tab__content__item">
-                                            <h5><img src="../riddles/img/clients/avatars/asuya.jpg" class="avatar"></img> Ася</h5>
+                                            <h5><img src="img/clients/avatars/asuya.jpg" class="avatar"></img> Ася</h5>
                                             <p><div class="rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star-o"></i>
@@ -379,9 +380,9 @@
                         <div class="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
                             <span class="label">Новинка</span>
                             <ul class="product__hover">
-                                <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a></li>
-                                <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a></li>
+                                <li><a href="./shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -413,9 +414,9 @@
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
                             <ul class="product__hover">
-                                <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a></li>
-                                <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a></li>
+                                <li><a href="./shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -448,9 +449,9 @@
                         <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
                             <span class="label">Распродажа</span>
                             <ul class="product__hover">
-                                <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a></li>
-                                <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a></li>
+                                <li><a href="./shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -482,9 +483,9 @@
                     <div class="product__item">
                         <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
                             <ul class="product__hover">
-                                <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a></li>
-                                <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a></li>
+                                <li><a href="./shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                             </ul>
                         </div>
                         <div class="product__item__text">
@@ -524,10 +525,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="../riddles/img/white-logo.png" alt=""></a>
+                            <a href="#"><img src=" {% static "img/white-logo.png" %}"alt=""></a>
                         </div>
                         <p>Все для покупателя.</p>
-                        <a href="#"><img src="../riddles/img/payment.png" alt=""></a>
+                        <a href="#"><img src=" {% static "img/payment.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -585,23 +586,23 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
             <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
+                <input type="text" id="search-input" placeholder="Искать...">
             </form>
         </div>
     </div>
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src=" {% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src=" {% static "js/bootstrap.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nice-select.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nicescroll.min.js" %}"></script>
+    <script src=" {% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src=" {% static "js/jquery.countdown.min.js" %}"></script>
+    <script src=" {% static "js/jquery.slicknav.js" %}"></script>
+    <script src=" {% static "js/mixitup.min.js" %}"></script>
+    <script src=" {% static "js/owl.carousel.min.js" %}"></script>
+    <script src=" {% static "js/main.js" %}"></script>
 </body>
 
 </html>

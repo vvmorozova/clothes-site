@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Male_Fashion Template">
     <meta name="keywords" content="fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pretty otter - онлайн сешка</title>
-	<link rel="icon" type="image/x-icon" href="../riddles/img/logo.ico" >
+	<link rel="icon" type="image/x-icon" href="{% static "img/logo.ico"%}" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Google Font -->
@@ -15,14 +15,15 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="../riddles/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" />
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/elegant-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/nice-select.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/slicknav.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
 </head>
 
 <body>
@@ -42,9 +43,9 @@
             
         </div>
         <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="#" class="search-switch"><img src=" {% static "img/icon/search.png"  %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/cart.png"  %}" alt=""> <span>0</span></a>
             <div class="price">0.00₽</div>
         </div>
         <div id="mobile-menu-wrap"></div>
@@ -74,24 +75,24 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="../riddles/img/logo.png" alt=""></a>
+                        <a href="../"><img src="{% static "img/logo.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Главная</a></li>
-                            <li><a href="./shop.html">Каталог</a></li>
-                            <li class="active"><a href="./blog.html">Наши новости</a></li>
-                            <li><a href="./contact.html">Контакты</a></li>
+                            <li><a href="../">Главная</a></li>
+                            <li><a href="../shop">Каталог</a></li>
+                            <li class="active"><a href="../blog">Наши новости</a></li>
+                            <li><a href="../contact">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+                        <a href="#" class="search-switch"><img src="{% static "img/icon/search.png"  %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/heart.png"  %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/cart.png"  %}" alt=""> <span>0</span></a>
                         <div class="price">0.00₽</div>
                     </div>
                 </div>
@@ -126,7 +127,7 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-lg-12">
                     <div class="blog__details__pic">
-                        <img src="../riddles/img/blog/details/konduki1.jpg" alt="">
+                        <img src="{% static "img/blog/details/konduki1.jpg" %}" alt="">
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -138,7 +139,7 @@
                             </ul>
                         </div>
                         <div class="blog__details__text">
-                            <p style="text-indent: 20px" align="justify">Правильно одеться в поход намного важнее, чем в условиях цивилизации. 
+                            <p style="text-indent: 20px; text-align: justify;">Правильно одеться в поход намного важнее, чем в условиях цивилизации.
                                 Промокнув в городе, вы сядете в автобус до дома, забежите в кафе или 
                                 ближайший торговый центр, где быстро согреетесь и обсохнете. А в дикой 
                                 природе останетесь один на один с холодом, дождём и леденящим ветром.
@@ -146,25 +147,19 @@
                                 от куртки до носков. Мы уже рассказывали, как выбрать треккинговую обувь, 
                                 а здесь поговорим именно про одежду.</p>
                                 <br><h3>Лето</h3>
-                            <p style="text-indent: 20px" align="justify">Лето – синоним слова «поход». Яркое солнце, зелёные леса, каменные 
+                            <p style="text-indent: 20px; text-align: justify;">Лето – синоним слова «поход». Яркое солнце, зелёные леса, каменные
                                 горные пики – новые места и нехоженые тропы так и зовут отправиться 
                                 в путь. Поэтому разбираемся, как одеться в активное путешествие, чтобы 
                                 оно принесло только кайф.</p>
                         </div>
-                        <!-- <div class="blog__details__quote">
-                            <i class="fa fa-quote-left"></i>
-                            <p>“When designing an advertisement for a particular product many things should be
-                                researched like where it should be displayed.”</p>
-                            <h6>_ John Smith _</h6>
-                        </div> -->
                         <div class="blog__details__text">
-                            <p style="text-indent: 20px" align="justify" >Одежда - на тело. Оптимальный выбор для летнего похода – футболка. 
+                            <p style="text-indent: 20px; text-align: justify;" >Одежда - на тело. Оптимальный выбор для летнего похода – футболка.
                                 В ней не будет жарко, а лямки рюкзака не натрут плечи. 
                                 Производители одежды для походов шьют футболки из технологичных 
                                 материалов, отводящих лишнюю влагу и обеспечивающих отличную вентиляцию. 
                                 В крупных магазинах спортивной одежды вы найдёте массу недорогих и 
                                 качественных вариантов.</p>
-                                <p style="text-indent: 20px" align="justify">Обязательный элемент одежды – ветровка или штормовка. Это лёгкие 
+                                <p style="text-indent: 20px; text-align: justify;">Обязательный элемент одежды – ветровка или штормовка. Это лёгкие
                                 непромокаемые и непродуваемые куртки, которые спасают от несильного 
                                 дождя и других капризов погоды. 
                                 
@@ -177,7 +172,7 @@
                                 это допустимо, но помните, что оголённая кожа – лакомый кусочек для 
                                 насекомых, крапивы, осоки и колючих кустарников. На случай дождя 
                                 прихватите с собой тонкие штаны из мембраны.</p>
-                                <p style="text-indent: 20px" align="justify">Главное правило – носков должно достаточно. 
+                                <p style="text-indent: 20px; text-align: justify;">Главное правило – носков должно достаточно.
                                 Не ограничивайтесь одной парой, они тонкие, лёгкие и мало весят. 
                                 А вот если единственные носки промокнут – испорченное настроение и 
                                 натёртые ноги обеспечены. Если хотите повысить уровень комфорта, 
@@ -186,7 +181,7 @@
 
                                 Какое взять нижнее бельё – выбирайте исключительно исходя из собственных
                                 предпочтений.</p>
-                                <p style="text-indent: 20px" align="justify">
+                                <p style="text-indent: 20px; text-align: justify;">
                                 Не идите в длительный поход в джинсах и джинсовой куртке. Их вес в 
                                 рюкзаке вас не порадует, а однажды намокнув, вещи из плотной джинсы 
                                 вряд ли быстро высохнут.
@@ -209,7 +204,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="blog__details__author">
                                         <div class="blog__details__author__pic">
-                                            <img src="../riddles/img/blog/details/blog-author.jpg" alt="">
+                                            <img src="{% static "img/blog/details/blog-author.jpg" %}" alt="">
                                         </div>
                                         <div class="blog__details__author__text">
                                             <h5>Анна Елисеенко</h5>
@@ -275,10 +270,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="../riddles/img/white-logo.png" alt=""></a>
+                            <a href="#"><img src="{% static "img/white-logo.png" %}" alt=""></a>
                         </div>
                         <p>Все для покупателя.</p>
-                        <a href="#"><img src="../riddles/img/payment.png" alt=""></a>
+                        <a href="#"><img src="{% static "img/payment.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -335,23 +330,23 @@
         <div class="h-100 d-flex align-items-center justify-content-center">
             <div class="search-close-switch">+</div>
             <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
+                <input type="text" id="search-input" placeholder="Искать...">
             </form>
         </div>
     </div>
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src=" {% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src=" {% static "js/bootstrap.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nice-select.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nicescroll.min.js" %}"></script>
+    <script src=" {% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src=" {% static "js/jquery.countdown.min.js" %}"></script>
+    <script src=" {% static "js/jquery.slicknav.js" %}"></script>
+    <script src=" {% static "js/mixitup.min.js" %}"></script>
+    <script src=" {% static "js/owl.carousel.min.js" %}"></script>
+    <script src=" {% static "js/main.js" %}"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
-
+{% load static %}
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Male_Fashion Template">
@@ -8,20 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>pretty otter - онлайн сешка</title>
-
+    <link rel="icon" type="image/x-icon" href="{% static "img/logo.ico"%}" >
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
     rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="../riddles/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="../riddles/css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}" />
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/elegant-icons.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/magnific-popup.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/nice-select.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/owl.carousel.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/slicknav.min.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "css/style.css" %}" type="text/css">
 </head>
 
 <body>
@@ -41,9 +42,9 @@
             
         </div>
         <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-            <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="#" class="search-switch"><img src=" {% static "img/icon/search.png"  %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a>
+            <a href="#"><img src=" {% static "img/icon/cart.png"  %}" alt=""> <span>0</span></a>
             <div class="price">0.00₽</div>
         </div>
         <div id="mobile-menu-wrap"></div>
@@ -73,34 +74,34 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="../riddles/img/logo.png" alt=""></a>
+                        <a href="../"><img src=" {% static "img/logo.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <nav class="header__menu mobile-menu">
                         <ul>
-                            <li><a href="./index.html">Главная</a></li>
-                            <li class="active"><a href="./shop.html">Каталог</a></li>
+                            <li><a href="../">Главная</a></li>
+                            <li class="active"><a href="../shop">Каталог</a></li>
                             <!-- <li><a href="#">Pages</a>
                                 <ul class="dropdown">
-                                    <li><a href="./about.html">About Us</a></li>
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><a href="../about">About Us</a></li>
+                                    <li><a href="../shop-details">Shop Details</a></li>
+                                    <li><a href="../shopping-cart">Shopping Cart</a></li>
+                                    <li><a href="../checkout">Check Out</a></li>
+                                    <li><a href="../blog-details">Blog Details</a></li>
                                 </ul>
                             </li> -->
-                            <li><a href="./blog.html">Наши новости</a></li>
-                            <li><a href="./contact.html">Контакты</a></li>
+                            <li><a href="../blog">Наши новости</a></li>
+                            <li><a href="../contact">Контакты</a></li>
                             <!-- <li><a href="#">Контакты</a></li> -->
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="../riddles/img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a>
-                        <a href="#"><img src="../riddles/img/icon/cart.png" alt=""> <span>0</span></a>
+                        <a href="#" class="search-switch"><img src="{% static "img/icon/search.png" %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/heart.png" %}" alt=""></a>
+                        <a href="#"><img src="{% static "img/icon/cart.png" %}" alt=""> <span>0</span></a>
                         <div class="price">0.00₽</div>
                     </div>
                 </div>
@@ -118,7 +119,7 @@
                     <div class="breadcrumb__text">
                         <h4>Каталог</h4>
                         <div class="breadcrumb__links">
-                            <a href="./index.html">Главная</a>
+                            <a href="../">Главная</a>
                             <span>Каталог</span>
                         </div>
                     </div>
@@ -189,12 +190,12 @@
                                         <div class="card-body">
                                             <div class="shop__sidebar__price">
                                                 <ul>
-                                                    <li><a href="#">0.00₽ - 50.00₽</a></li>
-                                                    <li><a href="#">50.00₽ - 100.00₽</a></li>
-                                                    <li><a href="#">100.00₽ - 150.00₽</a></li>
-                                                    <li><a href="#">150.00₽ - 200.00₽</a></li>
-                                                    <li><a href="#">200.00₽ - 250.00₽</a></li>
-                                                    <li><a href="#">250.00+</a></li>
+                                                    <li><a href="#">0 ₽ - 500 ₽</a></li>
+                                                    <li><a href="#">500 ₽ - 1 500 ₽</a></li>
+                                                    <li><a href="#">1 500 ₽ - 3 000 ₽</a></li>
+                                                    <li><a href="#">3 000 ₽ - 5 000 ₽</a></li>
+                                                    <li><a href="#">5 000 ₽ - 7 000 ₽</a></li>
+                                                    <li><a href="#">7 000 ₽+</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -318,12 +319,12 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-2.jpg" %}">
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -353,13 +354,13 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-3.jpg" %}">
                                     <span class="label">Распродажа</span>
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -389,13 +390,13 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6" >
                             <div class="product__item" >
-                                <!-- <div class="product__item__pic" href="./shop-details.html"></div> -->
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
+                                <!-- <div class="product__item__pic" href="../shop-details"></div> -->
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-4.jpg" %}">
                                      <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div> 
                                 <div class="product__item__text">
@@ -425,13 +426,13 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-6.jpg" %}">
                                     <span class="label">Распродажа</span>
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -461,12 +462,12 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-7.jpg" %}">
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -496,12 +497,12 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-8.jpg" %}">
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -531,12 +532,12 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-9.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-9.jpg" %}">
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -566,13 +567,13 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-10.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-10.jpg" %}">
                                     <span class="label">Распродажа</span>
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -602,12 +603,12 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-11.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-11.jpg" %}">
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -637,13 +638,13 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-12.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-12.jpg" %}">
                                     <span class="label">Распродажа</span>
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -673,12 +674,12 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-13.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-13.jpg" %}">
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -708,12 +709,12 @@
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/product-14.jpg">
+                                <div class="product__item__pic set-bg" data-setbg=" {% static "img/product/product-14.jpg" %}">
                                     <ul class="product__hover">
-                                        <li><a href="#"><img src="../riddles/img/icon/heart.png" alt=""></a></li>
-                                        <li><a href="#"><img src="../riddles/img/icon/compare.png" alt=""> <span>Сравнить</span></a>
+                                        <li><a href="#"><img src=" {% static "img/icon/heart.png" %}" alt=""></a></li>
+                                        <li><a href="#"><img src=" {% static "img/icon/compare.png" %}" alt=""> <span>Сравнить</span></a>
                                         </li>
-                                        <li><a href="./shop-details.html"><img src="../riddles/img/icon/search.png" alt=""></a></li>
+                                        <li><a href="../shop-details"><img src=" {% static "img/icon/search.png" %}" alt=""></a></li>
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
@@ -766,10 +767,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="../riddles/img/white-logo.png" alt=""></a>
+                            <a href="#"><img src="img/white-logo.png" alt=""></a>
                         </div>
                         <p>Все для покупателя.</p>
-                        <a href="#"><img src="../riddles/img/payment.png" alt=""></a>
+                        <a href="#"><img src="img/payment.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -834,16 +835,16 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src=" {% static "js/jquery-3.3.1.min.js" %}"></script>
+    <script src=" {% static "js/bootstrap.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nice-select.min.js" %}"></script>
+    <script src=" {% static "js/jquery.nicescroll.min.js" %}"></script>
+    <script src=" {% static "js/jquery.magnific-popup.min.js" %}"></script>
+    <script src=" {% static "js/jquery.countdown.min.js" %}"></script>
+    <script src=" {% static "js/jquery.slicknav.js" %}"></script>
+    <script src=" {% static "js/mixitup.min.js" %}"></script>
+    <script src=" {% static "js/owl.carousel.min.js" %}"></script>
+    <script src=" {% static "js/main.js" %}"></script>
 </body>
 
 </html>
