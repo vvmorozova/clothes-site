@@ -18,4 +18,18 @@ urlpatterns = [
     path('shopping-cart/', views.shopping_cart, name='shopping-cart'),
     path('stats/', views.stats, name='stats'),
     path('contact/', views.contact, name='contact'),
+
+    path('answer/', views.answer5, name='answer5'),
+    path('answer0/', views.answer0, name='answer0'),
+    path('answer1/', views.answer1, name='answer1'),
+    path('answer2/', views.answer2, name='answer2'),
+    path('answer3/', views.answer3, name='answer3'),
+    path('answer4/', views.answer4, name='answer4'),
+
+    path('questionaire/', views.questionaire, name='questionaire'),
+    path('questionaire1/', views.questionaire1, name='questionaire1'),
+    path('questionaire2/', views.questionaire2, name='questionaire2'),
+    path('questionaire3/', views.questionaire3, name='questionaire3'),
+    path('questionaire4/', views.questionaire4, name='questionaire4'),
+    path('questionaire5/', views.questionaire5, name='questionaire5'),
 ]

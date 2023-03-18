@@ -66,6 +66,33 @@ def about(request):
 def contact(request):
     return render(request, 'contact.html')
 
+def answer5(request):
+    return render(request, 'answer.html')
+
+def answer0(request):
+    return render(request, 'answer0.html')
+def answer1(request):
+    return render(request, 'answer1.html')
+def answer2(request):
+    return render(request, 'answer2.html')
+def answer3(request):
+    return render(request, 'answer3.html')
+def answer4(request):
+    return render(request, 'answer4.html')
+
+
+def questionaire(request):
+    return render(request, 'questionaire.html')
+def questionaire1(request):
+    return render(request, 'questionaire1.html')
+def questionaire2(request):
+    return render(request, 'questionaire2.html')
+def questionaire3(request):
+    return render(request, 'questionaire3.html')
+def questionaire4(request):
+    return render(request, 'questionaire4.html')
+def questionaire5(request):
+    return render(request, 'questionaire5.html')
 def answer(request, riddle_id):
     riddle = get_object_or_404(Riddle, pk=riddle_id)
     try:

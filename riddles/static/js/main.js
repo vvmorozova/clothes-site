@@ -283,8 +283,7 @@ if (ageElems != null)
     if (!next) {
         var n = Math.max.apply(Math, Example.arr)
         var l = Example.arr.indexOf(n)
-        window.location = "answer"+ l +".html";
-        console.log("here1234");
+        window.location= "../answer"+ l +"/";
         return ;
     }
     else {

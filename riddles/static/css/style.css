@@ -4096,7 +4096,7 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	text-align: center;
+	text-align: left;
   }
   
   .container_q:hover .answ {
@@ -4110,8 +4110,9 @@ button {
   .text {
 	background-color: #dc3545;
 	color: white;
-	font-size: 16px;
-	padding: 16px 32px;
+	font-size: 13px;
+	padding: 6px 60px 6px 15px;
+	text-align: left;
   }
   .answ {
 	width: 200px;

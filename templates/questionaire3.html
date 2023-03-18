@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="../"><img src="img/logo.png" alt=""></a>
+                        <a href="../"><img src="{% static "img/logo.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -111,33 +111,33 @@
             <!-- <div class="row"> -->
             <form id="form1" class="row" action="../questionaire2" >
                 <div class="container_q ">
-                    <img class="answ"  src="img/stylist/haircut/boho.jpg" />
+                    <img class="answ"  src="{% static "img/stylist/haircut/boho.jpg" %}" />
                     <div class="middle">
-                        <input class="text" type="button" value="Кэмп" name="camp" onClick="testResults(1, './questionaire4')">
+                        <input class="text" type="button" value="Кэмп" name="camp" onClick="testResults(1, '../questionaire4')">
                     </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ" src="img/stylist/haircut/camp.jpg" />
+                    <img class="answ" src="{% static "img/stylist/haircut/camp.jpg" %}"  />
                     <div class="middle">
-                    <input class="text" type="button" value="Бохо" name="boho" onClick="testResults(2, './questionaire4')">
+                    <input class="text" type="button" value="Бохо" name="boho" onClick="testResults(2, '../questionaire4')">
                   </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ" src="img/stylist/haircut/casual.jpg" />
+                    <img class="answ" src="{% static "img/stylist/haircut/casual.jpg" %}"  />
                     <div class="middle">
-                    <input class="text" type="button" value="Кэжуал" name="casual" onClick="testResults(3, './questionaire4')">
+                    <input class="text" type="button" value="Кэжуал" name="casual" onClick="testResults(3, '../questionaire4')">
                   </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ"  src="img/stylist/haircut/sport.jpg" />
+                    <img class="answ"  src="{% static "img/stylist/haircut/sport.jpg" %}"  />
                     <div class="middle">
-                    <input class="text" type="button" value="Фея" name="fairy" onClick="testResults(4, './questionaire4')">
+                    <input class="text" type="button" value="Фея" name="fairy" onClick="testResults(4, '../questionaire4')">
                   </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ" src="img/stylist/haircut/glamour.jpg" />
+                    <img class="answ" src="{% static "img/stylist/haircut/glamour.jpg" %}"  />
                     <div class="middle">
-                    <input class="text" type="button" value="Гламур" name="glamour" onClick="testResults(0, './questionaire4')">
+                    <input class="text" type="button" value="Гламур" name="glamour" onClick="testResults(0, '../questionaire4')">
                   </div>
                 </div>
             </form>
@@ -170,10 +170,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/white-logo.png" alt=""></a>
+                            <a href="#"><img src="{% static "img/white-logo.png" %}" alt=""></a>
                         </div>
                         <p>Все для покупателя.</p>
-                        <a href="#"><img src="img/payment.png" alt=""></a>
+                        <a href="#"><img src="{% static "img/payment.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">

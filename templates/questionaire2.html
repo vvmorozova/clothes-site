@@ -111,33 +111,33 @@
             <!-- <div class="row"> -->
             <form id="form1"  class="row" action="../questionaire2" >
                 <div class="container_q ">
-                    <img class="answ"  src="img/stylist/color/boho.png" />
+                    <img class="answ"  src="{% static "img/stylist/color/boho.png" %}" />
                     <div class="middle">
-                        <input class="text" type="button" value="Кэмп" name="camp" onClick="testResults(1, './questionaire3')">
+                        <input class="text" type="button" value="Кэмп" name="camp" onClick="testResults(1, '../questionaire3')">
                     </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ" src="img/stylist/color/fairy.png" />
+                    <img class="answ" src="{% static "img/stylist/color/fairy.png" %}" />
                     <div class="middle">
-                    <input class="text" type="button" value="Бохо" name="boho" onClick="testResults(2, './questionaire3')">
+                    <input class="text" type="button" value="Бохо" name="boho" onClick="testResults(2, '../questionaire3')">
                   </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ" src="img/stylist/color/glamour.png" />
+                    <img class="answ" src="{% static "img/stylist/color/glamour.png" %}" />
                     <div class="middle">
-                    <input class="text" type="button" value="Кэжуал" name="casual" onClick="testResults(3, './questionaire3')">
+                    <input class="text" type="button" value="Кэжуал" name="casual" onClick="testResults(3, '../questionaire3')">
                   </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ"  src="img/stylist/color/retro.png" />
+                    <img class="answ"  src="{% static "img/stylist/color/retro.png"  %}"/>
                     <div class="middle">
-                    <input class="text" type="button" value="Фея" name="fairy" onClick="testResults(4, './questionaire3')">
+                    <input class="text" type="button" value="Фея" name="fairy" onClick="testResults(4, '../questionaire3')">
                   </div>
                 </div>
                 <div class="container_q">
-                    <img class="answ" src="img/stylist/color/rock.png" />
+                    <img class="answ" src="{% static "img/stylist/color/rock.png" %}" />
                     <div class="middle">
-                    <input class="text" type="button" value="Гламур" name="glamour" onClick="testResults(0, './questionaire3')">
+                    <input class="text" type="button" value="Гламур" name="glamour" onClick="testResults(0, '../questionaire3')">
                   </div>
                 </div>
             </form>
@@ -170,10 +170,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/white-logo.png" alt=""></a>
+                            <a href="#"><img src="{% static "img/white-logo.png" %}" alt=""></a>
                         </div>
                         <p>Все для покупателя.</p>
-                        <a href="#"><img src="img/payment.png" alt=""></a>
+                        <a href="#"><img src="{% static "img/payment.png" %}" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
