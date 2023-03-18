@@ -80,7 +80,8 @@ def answer3(request):
 def answer4(request):
     return render(request, 'answer4.html')
 
-
+def virtual_try_on(request):
+    return render(request, 'virtual_try_on.html')
 def questionaire(request):
     return render(request, 'questionaire.html')
 def questionaire1(request):
