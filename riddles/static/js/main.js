@@ -248,8 +248,8 @@ let form = document.forms[0];
 
 let ageElems = form.elements.age;
 
-if (ageElems != null)
-    alert(ageElems[0]); // [object HTMLInputElement]
+// if (ageElems != null)
+//     alert(ageElems[0]); // [object HTMLInputElement]
 
 
 // form
