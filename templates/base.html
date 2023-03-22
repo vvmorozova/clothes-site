@@ -3,13 +3,12 @@
 {% load static %}
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Male_Fashion Template">
+    <meta name="description" content="pretty otter - онлайн сешка">
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pretty otter - онлайн сешка</title>
 	<link rel="icon" type="image/x-icon" href="{% static "img/logo.ico"%}" >
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Male-Fashion | Template</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -82,17 +81,20 @@
                     <nav class="header__menu mobile-menu">
                         {% if view.template_name == "index.html" %}
                         <ul>
-                            <li><a href="./">Главная</a></li>
-                            <li class="active"><a href="./shop">Каталог</a></li>
+                            <li class="active"><a href="">Главная</a></li>
+                            <li ><a href="./shop">Каталог</a></li>
                             <li><a href="./blog">Наши новости</a></li>
                             <li><a href="./contact">Контакты</a></li>
                         </ul>
                         {% else %}
                         <ul>
-                            <li><a href="../">Главная</a></li>
-                            <li class="active"><a href="../shop">Каталог</a></li>
+                            <li class="../"><a href="">Главная</a></li>
+                            <li><a href="../shop">Каталог</a></li>
+                            
                             <li><a href="../blog">Наши новости</a></li>
+                            
                             <li><a href="../contact">Контакты</a></li>
+                            
                         </ul>
                         {% endif %}
                     </nav>

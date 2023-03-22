@@ -29,6 +29,7 @@ class Item(models.Model):
         uni_kids = 'cu'
     gender = models.TextField(choices=Gender.choices, default=Gender.woman)
     size = models.IntegerField(default=0)
+    price = models.IntegerField(default=1000)
 
 class Pics(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
