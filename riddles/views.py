@@ -33,9 +33,14 @@ class DetailView(generic.DetailView):
 class ResultsView(generic.DetailView):
     model = Question
     template_name = 'results.html'
+
+from django.http import HttpResponse
+from django.template import loader
 def index(request):
+    # template = loader.get_template('index.html')
     latest_question_list = Question.objects.order_by('-pub_date')[:5]
     context = {'latest_question_list': latest_question_list}
+    # return HttpResponse(template.render(), context)
     #return render(request, "index.html", {"latest_riddles": Riddle.objects.order_by('-pub_date')[:5]})
     return render(request, 'index.html', context)
 
@@ -148,3 +153,16 @@ def vote(request, question_id):
         # with POST data. This prevents data from being posted twice if a
         # user hits the Back button.
         return HttpResponseRedirect(reverse('riddles:results', args=(question.id,)))
+
+
+# from jinja2 import Environment, FileSystemLoader
+
+# content = 'This is about page'
+
+# file_loader = FileSystemLoader('templates')
+# env = Environment(loader=file_loader)
+
+# template = env.get_template('virtual_try_on.html')
+
+# output = template.render(content=content)
+# print(output)
