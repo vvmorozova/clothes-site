@@ -4,13 +4,17 @@
 
 {% block content %}
 {% load static %}
-<div style="display: flex; margin: 50px" >
-<div class="column" style=" flex: 50%;">
-    <input type="file" id="vton-photo" name="vton-photo" accept="image/png, image/jpeg">
+<div class="row" >
+<div class="column" >
+    <input style="margin-left: 30px;"type="file" id="vton-photo" name="vton-photo" accept="image/png, image/jpeg">
     <a href="." class="qu-btn">Подтвердить</a>
 </div>
-<div class="column" style=" flex: 50%;">
-    <img>
+<svg width="100" height="110">
+    <rect width="300" height="100" style="fill:rgb(255,255,255);stroke-width:3;stroke:rgb(255,255,255)" />
+  </svg>
+<div class="column" style="justify-content: right;" align="right">
+<img src=" {% static "img/product/product-7.jpg" %}" >
+<img src=" {% static "img/product/product-7.jpg" %}" >
 </div>
 </div>
 {% endblock %}

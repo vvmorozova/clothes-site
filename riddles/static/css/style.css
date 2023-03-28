@@ -172,6 +172,21 @@ ol {
 	/* justify-content: right; */
 }
 
+.qu-btn-vton {
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 14px 30px;
+	color: #ffffff;
+	background: #000000;
+	letter-spacing: 4px;
+	float: right;
+	width: 40%; /* Full width */
+	height: 40%;
+	text-align:center;
+	/* justify-content: right; */
+}
 .primary-btn {
 	display: inline-block;
 	font-size: 13px;
