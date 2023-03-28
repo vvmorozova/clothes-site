@@ -30,10 +30,17 @@ class Item(models.Model):
     gender = models.TextField(choices=Gender.choices, default=Gender.woman)
     size = models.IntegerField(default=0)
     price = models.IntegerField(default=1000)
+    rate = models.IntegerField(default=0)
+    # class Meta:
+    #    managed = True
+    #    db_table = 'items'
 
 class Pics(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     pic = models.ImageField(upload_to='pics')
+    # class Meta:
+    #    managed = True
+    #    db_table = 'pics'
 
 #class Sizes(models.Model):
     #item = models.ForeignKey(Item, on_delete=models.CASCADE)
@@ -43,6 +50,9 @@ class Composition(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
     material = models.CharField(max_length=255)
     percent = models.IntegerField(default=0)
+    # class Meta:
+    #    managed = True
+    #    db_table = 'comp'
 
 import datetime
 

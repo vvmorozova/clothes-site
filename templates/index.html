@@ -114,7 +114,7 @@
             {% if latest_question_list %}
                 <ul>
                 {% for question in latest_question_list %}
-                    <li><a style="color:#0b0b0b" href="/riddles/{{ question.id }}/">{{ question.question_text }}</a></li>
+                    <li><a style="color:#0b0b0b" href="/{{ question.id }}/">{{ question.question_text }}</a></li>
                 {% endfor %}
                 </ul>
             {% else %}

@@ -23,10 +23,10 @@
                                 <a href="{% url 'riddles:detail' question.id %}">Выбрать заново</a>
                             {%block scripts%}
 
-                        {%block content%}
+                        {%block content1%}
                         <canvas id="pie-chart" width="40%" height="30%"></canvas>
                         <canvas id="line-chart" width="40%" height="30%"></canvas>
-                        {%endblock content%}
+                        {%endblock content1%}
                           <script>
 new Chart("pie-chart", {
     type: 'pie',
@@ -95,5 +95,6 @@ new Chart("line-chart", {
             </div>
         </div>
     </section>
+    <!-- <script src=" {% static "js/main.js" %}"></script> -->
     <!-- Contact Section End -->
     {% endblock %}

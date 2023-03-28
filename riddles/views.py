@@ -8,7 +8,7 @@ from django.shortcuts import get_object_or_404, render
 from django.urls import reverse
 from django.views import generic
 from django.utils import timezone
-from .models import Choice, Question
+from .models import Choice, Question, Item, Composition, Pics
 
 
 class IndexView(generic.ListView):
@@ -50,8 +50,23 @@ def blog(request):
 def blog_details(request):
     return render(request, 'blog-details.html')
 
+class ShopView(generic.ListView):
+    template_name = 'shop.html'
+    context_object_name = 'items'
+    model = Item
+    def get_queryset(self):
+        return Pics.objects.select_related('item')
+    def __str__(self):
+        return self.name
+    # pic = Pics.objects.select_related('item')
+
 def shop(request):
-    return render(request, 'shop.html')
+    items = Item.objects.order_by('price')
+    pics = Pics.objects.order_by('price')
+    comp = Composition.objects.order_by('price')
+    # i = get_object_or_404(Pics, pk=1)
+    context = {'items':items, 'pics':pics, 'comp':comp}
+    return render(request, 'shop.html', context)
 
 def shop_details(request):
     return render(request, 'shop-details.html')

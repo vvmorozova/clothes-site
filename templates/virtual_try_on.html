@@ -4,8 +4,13 @@
 
 {% block content %}
 {% load static %}
-<h1>About page</h1>
-<p>
-    This is about page
-</p>
+<div style="display: flex; margin: 50px" >
+<div class="column" style=" flex: 50%;">
+    <input type="file" id="vton-photo" name="vton-photo" accept="image/png, image/jpeg">
+    <a href="." class="qu-btn">Подтвердить</a>
+</div>
+<div class="column" style=" flex: 50%;">
+    <img>
+</div>
+</div>
 {% endblock %}
