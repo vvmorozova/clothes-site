@@ -102,6 +102,8 @@ def answer4(request):
 
 def virtual_try_on(request):
     return render(request, 'virtual_try_on.html')
+def virtual_try_on_result(request):
+    return render(request, 'virtual_try_on_result.html')
 def questionaire(request):
     return render(request, 'questionaire.html')
 def questionaire1(request):
